@@ -149,6 +149,8 @@ body {
   background-color: white;
   display: flex;
   flex-direction: column;
+  padding-bottom: 12px;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1s);
 }
 
 .team-item:hover {
@@ -167,7 +169,51 @@ body {
 
 .team-info {
   padding: 32px 0;
+
 }
+
+.icon {
+    fill: #fff;
+  }
+
+  .team-social {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    padding: 20px 0 24px;
+  }
+  
+
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 24px; /* ikonlar arası boşluk */
+    padding: 0;
+    margin: 16px;
+  }
+
+
+.social-links li{
+    list-style: none;
+}
+
+.social-link {
+    width: 40px;
+    height: 40px;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 250ms ease;
+  }
+  
+  .social-link:hover {
+    background-color: #404bbf;
+  }
+  
+
 
 /* PORTFOLIO */
 .portfolio-title {
@@ -239,17 +285,88 @@ body {
 }
 
 /* FOOTER */
+
 .page-footer {
-  background-color: #2e2f42;
-  padding: 90px 1.44px;
-}
+    background-color: #2e2f42;
+    padding: 100px 0;
+  }
+  
+  /* İçerikleri yan yana al */
+  .footer-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 120px; /* sol blok ile sağ blok arası mesafe */
+  }
+  
+  /* Sol blok */
+  .footer-left {
+    max-width: 264px;
 
-.logo-light {
-  color: white;
-}
+  }
+  
+  .footer-text {
+    margin-top: 16px;
+    color: #E7E9FC;
+    font-family: roboto;
+    font-style: regular;
+    font-weight: 400px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+  }
+  
+  /* Sağ blok */
+  .footer-right {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    margin-top: 0; /* çok aşağıda görünürse burayla oynarız */
+  }
+  
+  .footer-social-title {
+    font-family: roboto;
+    font-weight: 500;
+    font-style: medium;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    margin: 0 0 16px 0;
+    font-size: 16px;
+    color: #ffffff;
+  }
+  
+  /* İkon listesi */
+  .footer-links {
+    display: flex;
+    gap: 16px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-links li {
+    list-style: none;
+  }
+  
+  .footer-link {
+    width: 40px;
+    height: 40px;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 250ms ease;
+  }
+  
+  .footer-link:hover {
+    background-color: #404bbf;
+  }
+  
+  .footer-link .icon {
+    fill: #ffffff;
+  }
 
-.footer-text {
-  width: 264px;
-  margin-top: 16px;
-  color: white;
-}
+  .footer-left .logo-light{
+    color: white;
+  }
+  
