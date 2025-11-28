@@ -93,24 +93,47 @@ body {
 
 /* FEATURES */
 .features-list {
-  display: flex;
-  gap: 24px;
-}
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+  }
+  
+  .feature-item {
+    width: 264px;
+  }
 
-.feature-item {
-  width: calc((100% - 72px) / 4);
-}
+  .feature-icon-box{
+    width: 264px;
+    height: 112px;
+    background-color: #F4F4FD;
+    border: 2px solid rgba(192, 192, 192, 0.75);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
 
-.feature-title {
-  font-weight: 500;
-  font-size: 20px;
-  margin-bottom: 8px;
-}
-
-.feature-text {
-  font-size: 16px;
-  color: #434455;
-}
+  }
+  
+  .feature-icon {
+    fill: #2e2f42;
+  }
+  
+  .feature-title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-bottom: 8px;
+  }
+  
+  .feature-text {
+    color: #434455;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
 
 /* LOGO */
 .logo {
@@ -291,7 +314,6 @@ body {
     padding: 100px 0;
   }
   
-  /* İçerikleri yan yana al */
   .footer-container {
     display: flex;
     justify-content: flex-start;
@@ -299,7 +321,7 @@ body {
     gap: 120px; /* sol blok ile sağ blok arası mesafe */
   }
   
-  /* Sol blok */
+  /* left*/
   .footer-left {
     max-width: 264px;
 
@@ -316,7 +338,7 @@ body {
     letter-spacing: 0.02em;
   }
   
-  /* Sağ blok */
+  /* right*/
   .footer-right {
     display: flex;
     flex-direction: column;
@@ -335,7 +357,7 @@ body {
     color: #ffffff;
   }
   
-  /* İkon listesi */
+  
   .footer-links {
     display: flex;
     gap: 16px;
